@@ -18,13 +18,10 @@ app.use(function(req, res, next) {
 
 router(app);
 
+// process.on('uncaughtException', function(err) {
+//     console.log(err);
+// });
 
-// app.get('/me',ensureAuthorized,function(req,res){
-//     console.log(req)
-// })
-// function ensureAuthorized(req,res,next){
-//     console.dir(req.headers.token)
-// }
 app.listen(3000,()=>{
     console.log('Running...')
 })

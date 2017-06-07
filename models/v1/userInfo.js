@@ -7,12 +7,11 @@ const Schema = mongoose.Schema;
 const userInfoSchema = new Schema({
 	id: Number,
     username: String,
-	password: String,
+	// password: String,
 	email: {type: String, default: ''},
     mobile: {type: String, default: ''},
     registe_time: String,
-    change_time:String,
-    token:String
+    change_time:String
 })
 userInfoSchema.index({id: 1});
 
